@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import Jacek from "./Jacek";
+import Gosia from "./Gosia";
+import Seba from "./Seba";
+import { Route, Switch, NavLink, Link} from "react-router-dom"
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     
+      <nav className="navbar">
+        <NavLink exact activeClassName="activeNav" to="/">
+          Home
+        </NavLink>
+        <NavLink exact activeClassName="activeNav" to="/Jacek">
+          Jacek
+        </NavLink>
+        <NavLink exact activeClassName="activeNav" to="/Gosia">
+          Gosia
+        </NavLink>
+        <NavLink exact activeClassName="activeNav" to="/Seba">
+          Seba
+        </NavLink>
+      </nav>
+      <Switch>
+        <Route exact path="/" component={App}/>
+        <Route exact path="/Jacek" component={Jacek}/>
+        <Route exact path="/Gosia" component={Gosia}/>
+        <Route exact path="/Seba" component={Seba}/>
+      </Switch>
     </div>
   );
 }
