@@ -2,6 +2,7 @@ import './App.css';
 import Jacek from "./Jacek";
 import Gosia from "./Gosia";
 import Seba from "./Seba";
+import Home from "./home"
 import { Route, Switch, NavLink, Link} from "react-router-dom"
 
 
@@ -24,7 +25,7 @@ function App() {
         </NavLink>
       </nav>
       <Switch>
-        <Route exact path="/" component={App}/>
+        <Route exact path="/" component={Home}/>
         <Route exact path="/Jacek" component={Jacek}/>
         <Route exact path="/Gosia" component={Gosia}/>
         <Route exact path="/Seba" component={Seba}/>
