@@ -1,0 +1,27 @@
+.cat img {
+  width: 85%;
+  border-radius: 50%;
+  border: 10px solid white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.461);
+  filter: opacity(75%);
+}
+
+.link {
+  color: rgb(36, 36, 36);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding-top: 1rem;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.name {
+  margin-top: 1rem;
+}
+
+img:hover {
+  filter: none;
+}
